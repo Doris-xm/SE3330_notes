@@ -120,11 +120,23 @@ Daily Scrum：每日15分钟简会
 
 C模型是现实世界的简化
 
+
+
 > **Why do we model?**
 > A. Helps to visualize a system
 > B. Gives us a template for constructing a system
-> C. Documents our decisionsD.All of the above
-> Answer: D
+> C. Documents our decisions
+> D.All of the above
+
+Answer: D
+
+
+
+> What project would be least likely to require a model?
+>
+> A.立交桥 B.沙发 C.地铁隧道 D.光盘
+
+B 简单的不需要建模
 
 ### 2. 建模方法
 
@@ -153,7 +165,6 @@ preview：
 > BlockQueue'=BlockQueue⌒ 〈Ablocks？〉
 > used'=used∧
 > free'=free
->
 
 **不足**：（尚未成为主流的开发方法，实践和应用较少 ）
  形式化规约主要关注于功能和数据，而问题的时序、控制和行为等方面却更难
@@ -180,7 +191,7 @@ preview：
 
 示例：销售订单
 
-<img src="./img/1.png" width="80%">
+<img src="./img/1.png" width="60%">
 
 UML图 p66
 
@@ -212,4 +223,37 @@ UML图 p66
 所谓软件产品线，它是共享一组公共受控特征，满足特定市场需要，并且按照预定方式在相关核心资产基础上开发而成的一系列软件系统。
 一条产品线是共享一组共同设计及标准的产品族（Product Family），这些产品属于同一领域，具有公共需求集，可以根据特定的用户需求对产品线体系结构进行定制，在此基础上通过可复用构件和特定应用构件的组装得到。 
 
-### 
+### 3. 面向对象方法概述
+
+Object Technology：A set of principles (abstraction, encapsulation, polymorphism)guiding software construction, together with languages, databases, and other tools that support those principles. 
+
+**四个基本原则 p63**：抽象、分装、模块化、层次原则
+**概念 p62**（对象、类、继承、消息）：面向对象=对象+分类+继承+消息通信
+
+**优势**：反映单一的范例；促进架构和代码重用；更接近真实世界的模型；促进稳定；能够适应变化
+
+**应用**：客户/服务器系统和Web开发；实时系统；嵌入式系统；多媒体系统；中间件
+
+**步骤**：分析OOA，设计OOD，编程OOP
+
+#### UML：Unified Modeling Language
+
+表示object、class、package
+
+<img src="./img/2.png" width="100%">
+
+#### 习题：
+
+> **The state of an object . . .?**
+> A. Is defined by a "state” attribute or set of attributes.
+> B. Does not normally change over time.
+> C. ls defined by an object's attributes and relationships.
+> D. Is the only condition in which an object may exist.
+
+Answer: C，属性或关系
+
+> **The visible behavior of an object is modeled by its . ..?**
+> A.Attributes B. Responsibilities C. Operations D. Methods
+
+C，操作
+
